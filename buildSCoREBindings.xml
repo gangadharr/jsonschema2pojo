@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="yes"?>
+<!-- ********************************************************************* 
+	     Date  : APR 05, 2011                                                         
+	     Description:  Build script to create the  Config Services Jar
+	     Author: sipattab/alsudhir                                                                
+	     ********************************************************************* -->
+<project name="SCoREBindings" default="GenerateBindings" basedir="./../..">
+	<property name="bindigs.path" value="${basedir}/xsd/SCoRE" />
+	<path id="app.lib">
+		<fileset dir="${basedir}/WebRoot/WEB-INF/lib">
+			<include name="**/*.jar" />
+		</fileset>
+	</path>
+
+	<taskdef name="jsonschema2pojo" classname="org.jsonschema2pojo.ant.Jsonschema2PojoTask">
+		<classpath>
+			<!-- classpath only required if jars have *NOT* been added to $ANT_HOME/lib -->
+			<fileset dir="${bindigs.path}/lib">
+				<include name="*.jar" />
+			</fileset>
+		</classpath>
+	</taskdef>
+
+	<target name="GenerateBindings" depends="clean">
+
+		<echo message=" Creating required folders.." />
+		<mkdir dir="${bindigs.path}/src" />
+		<mkdir dir="${bindigs.path}/classes" />
+		<mkdir dir="${bindigs.path}/jar" />
+
+		<echo message=" Generating Binding form given schema location  [${bindigs.path}/schema].." />
+		<jsonschema2pojo source="${bindigs.path}/schema" targetDirectory="${bindigs.path}/src" targetPackage="com.cisco.ccw.quoting.module.review.bindings" />
+
+		<echo message=" Compiling generated java files.." />
+		<javac srcdir="${bindigs.path}/src" destdir="${bindigs.path}/classes" classpathref="app.lib" debug="on" fork="true" memoryinitialsize="512m" memorymaximumsize="512m">
+			<exclude name="**/*_.*" />
+		</javac>
+
+
+		<echo message=" Creating SCoRE bingings jar..." />
+		<jar destfile="${bindigs.path}/jar/SCoREBindings.jar" index="true">
+			<fileset dir="${bindigs.path}/classes">
+				<exclude name="**/*_.*" />
+			</fileset>
+		</jar>
+
+	</target>
+
+
+	<target name="clean" description="Deletes all the generated binding files">
+		<delete dir="${bindigs.path}/src" />
+		<delete dir="${bindigs.path}/classes" />
+		<delete dir="${bindigs.path}/jar" />
+	</target>
+</project>

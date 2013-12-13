@@ -1,0 +1,480 @@
+{
+	"type":"object",
+	"$schema": "http://json-schema.org/draft-03/schema",
+	"id": "http://jsonschema.net",
+	"required":false,
+	"properties":{
+		"scoreRequest": {
+			"type":"object",
+			"id": "http://jsonschema.net/scoreRequest",
+			"required":false,
+			"properties":{
+				"applicationName": {
+					"type":"string",
+					"id": "http://jsonschema.net/scoreRequest/applicationName",
+					"required":false
+				},
+				"billingInfo": {
+					"type":"object",
+					"id": "http://jsonschema.net/scoreRequest/billingInfo",
+					"required":false,
+					"properties":{
+						"country": {
+							"type":"string",
+							"id": "http://jsonschema.net/scoreRequest/billingInfo/country",
+							"required":false
+						},
+						"customerNumber": {
+							"type":"number",
+							"id": "http://jsonschema.net/scoreRequest/billingInfo/customerNumber",
+							"required":false
+						},
+						"orgId": {
+							"type":"number",
+							"id": "http://jsonschema.net/scoreRequest/billingInfo/orgId",
+							"required":false
+						},
+						"siteUseId": {
+							"type":"number",
+							"id": "http://jsonschema.net/scoreRequest/billingInfo/siteUseId",
+							"required":false
+						},
+						"state": {
+							"type":"string",
+							"id": "http://jsonschema.net/scoreRequest/billingInfo/state",
+							"required":false
+						}
+					}
+				},
+				"creditCheckComplete": {
+					"type":"string",
+					"id": "http://jsonschema.net/scoreRequest/creditCheckComplete",
+					"required":false
+				},
+				"creditCheckDate": {
+					"type":"string",
+					"id": "http://jsonschema.net/scoreRequest/creditCheckDate",
+					"required":false
+				},
+				"dealId": {
+					"type":"number",
+					"id": "http://jsonschema.net/scoreRequest/dealId",
+					"required":false
+				},
+				"debug": {
+					"type":"string",
+					"id": "http://jsonschema.net/scoreRequest/debug",
+					"required":false
+				},
+				"endCustomerInfo": {
+					"type":"object",
+					"id": "http://jsonschema.net/scoreRequest/endCustomerInfo",
+					"required":false,
+					"properties":{
+						"country": {
+							"type":"string",
+							"id": "http://jsonschema.net/scoreRequest/endCustomerInfo/country",
+							"required":false
+						},
+						"customerNumber": {
+							"type":"number",
+							"id": "http://jsonschema.net/scoreRequest/endCustomerInfo/customerNumber",
+							"required":false
+						},
+						"orgId": {
+							"type":"number",
+							"id": "http://jsonschema.net/scoreRequest/endCustomerInfo/orgId",
+							"required":false
+						},
+						"siteUseId": {
+							"type":"number",
+							"id": "http://jsonschema.net/scoreRequest/endCustomerInfo/siteUseId",
+							"required":false
+						},
+						"state": {
+							"type":"string",
+							"id": "http://jsonschema.net/scoreRequest/endCustomerInfo/state",
+							"required":false
+						}
+					}
+				},
+				"executeRules": {
+					"type":"string",
+					"id": "http://jsonschema.net/scoreRequest/executeRules",
+					"required":false
+				},
+				"federalGovt": {
+					"type":"string",
+					"id": "http://jsonschema.net/scoreRequest/federalGovt",
+					"required":false
+				},
+				"installSiteInfo": {
+					"type":"object",
+					"id": "http://jsonschema.net/scoreRequest/installSiteInfo",
+					"required":false,
+					"properties":{
+						"country": {
+							"type":"string",
+							"id": "http://jsonschema.net/scoreRequest/installSiteInfo/country",
+							"required":false
+						},
+						"customerNumber": {
+							"type":"number",
+							"id": "http://jsonschema.net/scoreRequest/installSiteInfo/customerNumber",
+							"required":false
+						},
+						"orgId": {
+							"type":"number",
+							"id": "http://jsonschema.net/scoreRequest/installSiteInfo/orgId",
+							"required":false
+						},
+						"siteUseId": {
+							"type":"number",
+							"id": "http://jsonschema.net/scoreRequest/installSiteInfo/siteUseId",
+							"required":false
+						},
+						"state": {
+							"type":"string",
+							"id": "http://jsonschema.net/scoreRequest/installSiteInfo/state",
+							"required":false
+						}
+					}
+				},
+				"intendedUse": {
+					"type":"string",
+					"id": "http://jsonschema.net/scoreRequest/intendedUse",
+					"required":false
+				},
+				"operation": {
+					"type":"string",
+					"id": "http://jsonschema.net/scoreRequest/operation",
+					"required":false
+				},
+				"orderId": {
+					"type":"number",
+					"id": "http://jsonschema.net/scoreRequest/orderId",
+					"required":false
+				},
+				"orderLines": {
+					"type":"array",
+					"id": "http://jsonschema.net/scoreRequest/orderLines",
+					"required":false,
+					"items":
+						{
+							"type":"object",
+							"id": "http://jsonschema.net/scoreRequest/orderLines/0",
+							"required":false,
+							"properties":{
+								"attachService": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/attachService",
+									"required":false
+								},
+								"billingInfo": {
+									"type":"object",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/billingInfo",
+									"required":false,
+									"properties":{
+										"country": {
+											"type":"string",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/billingInfo/country",
+											"required":false
+										},
+										"customerNumber": {
+											"type":"number",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/billingInfo/customerNumber",
+											"required":false
+										},
+										"orgId": {
+											"type":"number",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/billingInfo/orgId",
+											"required":false
+										},
+										"siteUseId": {
+											"type":"number",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/billingInfo/siteUseId",
+											"required":false
+										},
+										"state": {
+											"type":"string",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/billingInfo/state",
+											"required":false
+										}
+									}
+								},
+								"contractNumber": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/contractNumber",
+									"required":false
+								},
+								"endCustomerInfo": {
+									"type":"object",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/endCustomerInfo",
+									"required":false,
+									"properties":{
+										"country": {
+											"type":"string",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/endCustomerInfo/country",
+											"required":false
+										},
+										"customerNumber": {
+											"type":"number",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/endCustomerInfo/customerNumber",
+											"required":false
+										},
+										"orgId": {
+											"type":"number",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/endCustomerInfo/orgId",
+											"required":false
+										},
+										"siteUseId": {
+											"type":"number",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/endCustomerInfo/siteUseId",
+											"required":false
+										},
+										"state": {
+											"type":"string",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/endCustomerInfo/state",
+											"required":false
+										}
+									}
+								},
+								"federalGovt": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/federalGovt",
+									"required":false
+								},
+								"installSiteInfo": {
+									"type":"object",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/installSiteInfo",
+									"required":false,
+									"properties":{
+										"country": {
+											"type":"string",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/installSiteInfo/country",
+											"required":false
+										},
+										"customerNumber": {
+											"type":"number",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/installSiteInfo/customerNumber",
+											"required":false
+										},
+										"orgId": {
+											"type":"number",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/installSiteInfo/orgId",
+											"required":false
+										},
+										"siteUseId": {
+											"type":"number",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/installSiteInfo/siteUseId",
+											"required":false
+										},
+										"state": {
+											"type":"string",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/installSiteInfo/state",
+											"required":false
+										}
+									}
+								},
+								"lineID": {
+									"type":"number",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/lineID",
+									"required":false
+								},
+								"lineNumber": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/lineNumber",
+									"required":false
+								},
+								"lineType": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/lineType",
+									"required":false
+								},
+								"orderType": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/orderType",
+									"required":false
+								},
+								"partNumber": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/partNumber",
+									"required":false
+								},
+								"refurbLine": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/refurbLine",
+									"required":false
+								},
+								"revSourceCode": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/revSourceCode",
+									"required":false
+								},
+								"serviceItemInfo": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/serviceItemInfo",
+									"required":false
+								},
+								"serviceLevel": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/serviceLevel",
+									"required":false
+								},
+								"serviceProgName": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/serviceProgName",
+									"required":false
+								},
+								"shippingInfo": {
+									"type":"object",
+									"id": "http://jsonschema.net/scoreRequest/orderLines/0/shippingInfo",
+									"required":false,
+									"properties":{
+										"country": {
+											"type":"string",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/shippingInfo/country",
+											"required":false
+										},
+										"customerNumber": {
+											"type":"number",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/shippingInfo/customerNumber",
+											"required":false
+										},
+										"orgId": {
+											"type":"number",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/shippingInfo/orgId",
+											"required":false
+										},
+										"siteUseId": {
+											"type":"number",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/shippingInfo/siteUseId",
+											"required":false
+										},
+										"state": {
+											"type":"string",
+											"id": "http://jsonschema.net/scoreRequest/orderLines/0/shippingInfo/state",
+											"required":false
+										}
+									}
+								}
+							}
+						}
+					
+
+				},
+				"orderTotal": {
+					"type":"number",
+					"id": "http://jsonschema.net/scoreRequest/orderTotal",
+					"required":false
+				},
+				"orderType": {
+					"type":"string",
+					"id": "http://jsonschema.net/scoreRequest/orderType",
+					"required":false
+				},
+				"priceListInfo": {
+					"type":"object",
+					"id": "http://jsonschema.net/scoreRequest/priceListInfo",
+					"required":false,
+					"properties":{
+						"priceListId": {
+							"type":"number",
+							"id": "http://jsonschema.net/scoreRequest/priceListInfo/priceListId",
+							"required":false
+						},
+						"priceListName": {
+							"type":"string",
+							"id": "http://jsonschema.net/scoreRequest/priceListInfo/priceListName",
+							"required":false
+						}
+					}
+				},
+				"quoteNumber": {
+					"type":"string",
+					"id": "http://jsonschema.net/scoreRequest/quoteNumber",
+					"required":false
+				},
+				"requestId": {
+					"type":"number",
+					"id": "http://jsonschema.net/scoreRequest/requestId",
+					"required":false
+				},
+				"resellerInfo": {
+					"type":"object",
+					"id": "http://jsonschema.net/scoreRequest/resellerInfo",
+					"required":false,
+					"properties":{
+						"country": {
+							"type":"string",
+							"id": "http://jsonschema.net/scoreRequest/resellerInfo/country",
+							"required":false
+						},
+						"customerNumber": {
+							"type":"number",
+							"id": "http://jsonschema.net/scoreRequest/resellerInfo/customerNumber",
+							"required":false
+						},
+						"orgId": {
+							"type":"number",
+							"id": "http://jsonschema.net/scoreRequest/resellerInfo/orgId",
+							"required":false
+						},
+						"siteUseId": {
+							"type":"number",
+							"id": "http://jsonschema.net/scoreRequest/resellerInfo/siteUseId",
+							"required":false
+						},
+						"state": {
+							"type":"string",
+							"id": "http://jsonschema.net/scoreRequest/resellerInfo/state",
+							"required":false
+						}
+					}
+				},
+				"shippingInfo": {
+					"type":"object",
+					"id": "http://jsonschema.net/scoreRequest/shippingInfo",
+					"required":false,
+					"properties":{
+						"country": {
+							"type":"string",
+							"id": "http://jsonschema.net/scoreRequest/shippingInfo/country",
+							"required":false
+						},
+						"customerNumber": {
+							"type":"number",
+							"id": "http://jsonschema.net/scoreRequest/shippingInfo/customerNumber",
+							"required":false
+						},
+						"orgId": {
+							"type":"number",
+							"id": "http://jsonschema.net/scoreRequest/shippingInfo/orgId",
+							"required":false
+						},
+						"siteUseId": {
+							"type":"number",
+							"id": "http://jsonschema.net/scoreRequest/shippingInfo/siteUseId",
+							"required":false
+						},
+						"state": {
+							"type":"string",
+							"id": "http://jsonschema.net/scoreRequest/shippingInfo/state",
+							"required":false
+						}
+					}
+				},
+				"soNumber": {
+					"type":"number",
+					"id": "http://jsonschema.net/scoreRequest/soNumber",
+					"required":false
+				},
+				"userType": {
+					"type":"string",
+					"id": "http://jsonschema.net/scoreRequest/userType",
+					"required":false
+				}
+			}
+		}
+	}
+}

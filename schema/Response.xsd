@@ -1,0 +1,174 @@
+{
+	"type":"object",
+	"$schema": "http://json-schema.org/draft-03/schema",
+	"id": "http://jsonschema.net",
+	"required":false,
+	"properties":{
+		"scoreResponse": {
+			"type":"object",
+			"id": "http://jsonschema.net/scoreResponse",
+			"required":false,
+			"properties":{
+				"applicationName": {
+					"type":"string",
+					"id": "http://jsonschema.net/scoreResponse/applicationName",
+					"required":false
+				},
+				"dealId": {
+					"type":"number",
+					"id": "http://jsonschema.net/scoreResponse/dealId",
+					"required":false
+				},
+				"orderId": {
+					"type":"number",
+					"id": "http://jsonschema.net/scoreResponse/orderId",
+					"required":false
+				},
+				"orderLines": {
+					"type":"array",
+					"id": "http://jsonschema.net/scoreResponse/orderLines",
+					"required":false,
+					"items":
+						{
+							"type":"object",
+							"id": "http://jsonschema.net/scoreResponse/orderLines/0",
+							"required":false,
+							"properties":{
+								"attachService": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreResponse/orderLines/0/attachService",
+									"required":false
+								},
+								"contractNumber": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreResponse/orderLines/0/contractNumber",
+									"required":false
+								},
+								"deliveryMethod": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreResponse/orderLines/0/deliveryMethod",
+									"required":false
+								},
+								"lineID": {
+									"type":"number",
+									"id": "http://jsonschema.net/scoreResponse/orderLines/0/lineID",
+									"required":false
+								},
+								"lineNumber": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreResponse/orderLines/0/lineNumber",
+									"required":false
+								},
+								"lineType": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreResponse/orderLines/0/lineType",
+									"required":false
+								},
+								"partNumber": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreResponse/orderLines/0/partNumber",
+									"required":false
+								},
+								"revSourceCode": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreResponse/orderLines/0/revSourceCode",
+									"required":false
+								},
+								"serviceLevel": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreResponse/orderLines/0/serviceLevel",
+									"required":false
+								},
+								"serviceProgName": {
+									"type":"string",
+									"id": "http://jsonschema.net/scoreResponse/orderLines/0/serviceProgName",
+									"required":false
+								},
+								"status": {
+									"type":"object",
+									"id": "http://jsonschema.net/scoreResponse/orderLines/0/status",
+									"required":false,
+									"properties":{
+										"code": {
+											"type":"string",
+											"id": "http://jsonschema.net/scoreResponse/orderLines/0/status/code",
+											"required":false
+										},
+										"description": {
+											"type":"string",
+											"id": "http://jsonschema.net/scoreResponse/orderLines/0/status/description",
+											"required":false
+										},
+										"errorCode": {
+											"type":"string",
+											"id": "http://jsonschema.net/scoreResponse/orderLines/0/status/errorCode",
+											"required":false
+										},
+										"rules": {
+											"type":"string",
+											"id": "http://jsonschema.net/scoreResponse/orderLines/0/status/rules",
+											"required":false
+										}
+									}
+								}
+							}
+						}
+					
+
+				},
+				"orderType": {
+					"type":"string",
+					"id": "http://jsonschema.net/scoreResponse/orderType",
+					"required":false
+				},
+				"quoteNumber": {
+					"type":"string",
+					"id": "http://jsonschema.net/scoreResponse/quoteNumber",
+					"required":false
+				},
+				"requestId": {
+					"type":"number",
+					"id": "http://jsonschema.net/scoreResponse/requestId",
+					"required":false
+				},
+				"soNumber": {
+					"type":"number",
+					"id": "http://jsonschema.net/scoreResponse/soNumber",
+					"required":false
+				},
+				"status": {
+					"type":"object",
+					"id": "http://jsonschema.net/scoreResponse/status",
+					"required":false,
+					"properties":{
+						"code": {
+							"type":"string",
+							"id": "http://jsonschema.net/scoreResponse/status/code",
+							"required":false
+						},
+						"description": {
+							"type":"string",
+							"id": "http://jsonschema.net/scoreResponse/status/description",
+							"required":false
+						},
+						"errorCode": {
+							"type":"string",
+							"id": "http://jsonschema.net/scoreResponse/status/errorCode",
+							"required":false
+						},
+						"rules": {
+							"type":"string",
+							"id": "http://jsonschema.net/scoreResponse/status/rules",
+							"required":false
+						}
+					}
+				},
+				"userType": {
+					"type":"string",
+					"id": "http://jsonschema.net/scoreResponse/userType",
+					"required":false
+				}
+			}
+		}
+	}
+}
